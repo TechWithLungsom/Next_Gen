@@ -14,8 +14,6 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    const observers: IntersectionObserver[] = [];
-
     const observerOptions = {
       root: null,
       rootMargin: "-20% 0px -70% 0px",
