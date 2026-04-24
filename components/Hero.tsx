@@ -75,7 +75,8 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 overflow-hidden bg-[#020202]">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-20 pb-32 overflow-hidden bg-[#020202]">
+      {/* Background elements */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#1a1a1a_0%,transparent_70%)] opacity-50" />
         <motion.div
@@ -132,7 +133,7 @@ export default function Hero() {
 
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center pb-10"
+          className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center"
         >
           <MagneticButton className="w-full sm:w-auto">
             <a
@@ -158,21 +159,23 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
+      {/* Optimized Scroll Indicator Placement */}
       {!isMobile && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.5 }}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 pointer-events-none hidden md:flex flex-col items-center gap-4"
+          /* Pinning to the absolute bottom with minimal offset */
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 pointer-events-none hidden md:flex flex-col items-center gap-3 z-20"
         >
-          <span className="text-[10px] font-mono text-white/30 uppercase tracking-[0.5em]">
+          <span className="text-[9px] font-mono text-white/20 uppercase tracking-[0.5em]">
             Scroll
           </span>
-          <div className="w-px h-16 bg-gradient-to-b from-white/20 via-purple-500 to-transparent relative overflow-hidden">
+          <div className="w-px h-10 bg-gradient-to-b from-white/10 via-purple-500/50 to-transparent relative overflow-hidden">
             <motion.div
-              animate={{ y: [0, 64] }}
+              animate={{ y: [0, 40] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-0 left-0 w-full h-1/2 bg-white"
+              className="absolute top-0 left-0 w-full h-1/2 bg-white/60"
             />
           </div>
         </motion.div>
