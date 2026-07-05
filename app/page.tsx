@@ -12,6 +12,7 @@ import Contact from "@/components/Contact";
 import Achievements from "@/components/Achievements";
 import Footer from "@/components/Footer";
 import Preloader from "@/components/PreLoad";
+import ActivityFeedPage from "@/components/Activity";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -53,6 +54,7 @@ export default function Home() {
             <Projects />
             <Achievements />
             <Experience />
+            <ActivityFeedPage />
             <Contact />
             <Footer />
           </div>

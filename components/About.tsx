@@ -105,7 +105,7 @@ export default function About() {
             <p>
               I am a{" "}
               <span className="">
-                6th-semester Computer Science & Engineering student
+                final year Computer Science & Engineering student
               </span>{" "}
               at Assam down town University.
             </p>
@@ -120,11 +120,11 @@ export default function About() {
               <span className="">smart traffic management systems</span>.
             </p>
             <p>
-              Driven by community, I also hold the position of
-              <span className=""> Technical Lead</span> for
+              Additionally, I gain industry experience working as a
+              <span className=""> Software Developer Intern</span> at
               <span className="text-purple-400 font-semibold text-white">
                 {" "}
-                GDG on Campus AdtU
+                Oari Collab Private Limited
               </span>
               .
             </p>

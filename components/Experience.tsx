@@ -3,16 +3,22 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Technical Lead",
-    company: "Google Developers Group (GDG) AdtU",
-    period: "Sept 2025 - Present",
-    desc: "Managing all technical initiatives, mentoring team leads, and ensuring the successful execution of developer events campus-wide.",
+    title: "Software Developer Intern",
+    company: "Oari Collab Private Limited",
+    period: "July 2026 - Present",
+    desc: "Collaborating with cross-functional teams to build and optimize scalable modern software applications, enhancing clean code architectures.",
   },
   {
     title: "Chief Technical Officer (R&D)",
     company: "Vernovate Pvt Ltd",
     period: "June 2025 - Present",
     desc: "Overseeing research and development for modern software solutions, specifically focusing on smart traffic management systems.",
+  },
+  {
+    title: "Technical Lead",
+    company: "Google Developers Group (GDG) AdtU",
+    period: "Sept 2025 - June 2026",
+    desc: "Managing all technical initiatives, mentoring team leads, and ensuring the successful execution of developer events campus-wide.",
   },
   {
     title: "Full Stack Web Developer Intern",

@@ -7,7 +7,7 @@ const achievementData = [
     title: "Received 5 Lakh Grant under DST NIDHI iTBI",
     category: "@StartUp",
     location: "Assam down town University, 2025",
-    img: "https://res.cloudinary.com/dgmftp80m/image/upload/v1764350071/IMG-20250610-WA0050_ju86v8.jpg", // Replace with your actual image paths
+    img: "https://res.cloudinary.com/dgmftp80m/image/upload/v1764350071/IMG-20250610-WA0050_ju86v8.jpg",
   },
   {
     title: "Awarded as Student of the Year & Academics",
@@ -26,6 +26,12 @@ const achievementData = [
     category: "@Hackathon",
     location: "Jorhat Engineering Hackathon, 2025",
     img: "https://res.cloudinary.com/dgmftp80m/image/upload/v1764354060/1744033003308_xxzjuc.jpg",
+  },
+  {
+    title: "Awarded as Innovative Coder Award",
+    category: "@Education",
+    location: "Assam down town University, 2026",
+    img: "https://res.cloudinary.com/dgmftp80m/image/upload/v1783258734/Award_as3ugn.jpg", 
   },
   {
     title: "Awarded as All Rounder (Rising Star)",
@@ -69,7 +75,8 @@ export default function Achievements() {
         </p>
       </div>
 
-      <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
+      {/* Changed layout from CSS columns to standard Tailwind Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {achievementData.map((item, i) => (
           <motion.div
             key={i}
@@ -77,7 +84,7 @@ export default function Achievements() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
-            className="break-inside-avoid group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition-all hover:border-purple-500/50"
+            className="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm transition-all hover:border-purple-500/50"
           >
             <div className="relative aspect-[4/5] w-full bg-purple-900/10 overflow-hidden">
               <Image
